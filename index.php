@@ -64,7 +64,7 @@
          * (réference image: shorting-bar-4.jpg)
          * (réference image: shorting-bar-5.jpg)
          *
-         * Tu dois créer une barre de recherche qui permet d'affichés les mugs choisis selon ses critères:
+         * Tu dois créer une barre de recherche (via l'url) qui permet d'affichés les mugs choisis selon ses critères:
          *  - en stock
          *  - par prix
          *  - par couleur
@@ -82,6 +82,9 @@
          * Pour la logique du tri:
          *  - Dans le dossier form tu créera le fichier sortingForm.php
          *  - Dans ce fichier tu mettra ta logique pour la barre de tri.
+         *
+         * Pour afficher la barre de recherche tu dois cliquer sur le bouton "loupe" en haut a droite du site.
+         * Pour des tests tu peu laisser la barre de recherche visible en enlevant la class none ci-dessous.
          */
         ?>
 
