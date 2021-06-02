@@ -1,5 +1,7 @@
 <?php
 /**
+ * Créer une bdd mugs_party et importe le fichier mugs.sql qui ce trouve dans le dossier sql.
+ *
  * Tu dois déclaré une variable qui porte le nom du site: Mugs Party.
  * Le titre du site Mugs Party, est placé a 5 endroits diffèrents de la page. (10 points, 2 points par emplacement)
  * (réference image: exemple-titre-site.jpg).
