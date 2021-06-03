@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 02 juin 2021 à 13:31
+-- Généré le :  jeu. 03 juin 2021 à 08:23
 -- Version du serveur :  8.0.18
 -- Version de PHP :  7.2.31
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `mugs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL,
-  `image` varchar(255) NOT NULL,
+  `image` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
   `description` text NOT NULL,
   `qte` int(11) NOT NULL,
   `price` varchar(10) NOT NULL,
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `mugs` (
   `new` tinyint(1) NOT NULL,
   `tendances` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=63 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=64 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `mugs`
@@ -60,7 +60,8 @@ INSERT INTO `mugs` (`id`, `title`, `slug`, `image`, `description`, `qte`, `price
 (55, 'beau frère mug', 'beau-frere-mug', '009.png', 'Tu pense avoir la chance, d\'avoir un beau frère cool. Alors ce MUG est pour toi.', 99, '15', 'Noir,Rose', 'M,S,XXL', 1, 0),
 (56, 'a morning mug', 'a-morning-mug', '010.png', 'Tu te lève du pied gauche, ce mug est pour toi.', 0, '16', 'Vert,Jaune,Marron,Violet,Noir,Blanc', 'S,XXL,XL', 0, 0),
 (57, 'homer mug', 'homer-mug', '011.png', 'Avant la bière, un bon café dans le mug Homer pour commencer une bonne journée.', 55, '22', 'Noir,Marron', 'S,XXL', 1, 0),
-(58, 'dark vador mug', 'dark-vador-mug', '012.png', 'Pour les fan de Dark Vador et du côté obscure. Que la force obscure sois avec toi.', 99, '10', 'Vert,Rose,Noir,Marron', 'M,XL,XXL', 1, 1);
+(58, 'dark vador mug', 'dark-vador-mug', '012.png', 'Pour les fan de Dark Vador et du côté obscure. Que la force obscure sois avec toi.', 99, '10', 'Vert,Rose,Noir,Marron', 'M,XL,XXL', 1, 1),
+(32, 'saucisse mug', 'saucisse-mug', '', 'Le mug saucisse.', 20, '14', 'Vert,Blanc', 'M,S', 1, 0);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

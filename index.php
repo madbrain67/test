@@ -3,12 +3,22 @@
  * Créer une bdd mugs_party et importe le fichier mugs.sql qui ce trouve dans le dossier sql.
  * Créer ton fichier db.php avec les infos de connexion.
  *
+ * Supprime le dossier .git
+ * Supprime le fichier README.md
+ *
+ * Créer un repository (public) mugs_party sur ton github personnel.
+ * Ton travail devras être pusher sur ton dépôt mugs_party
+ * Le lien de ton dépôt github devra être déposer sur la plateformweb https://e-learning.alaji.fr/ section Développement Web Devoir: tp mugs_party
+ *
+ *
+ * (10 points, 2 points par emplacement)
  * Tu dois déclaré une variable qui porte le nom du site: Mugs Party.
- * Le titre du site Mugs Party, est placé a 5 endroits diffèrents de la page. (10 points, 2 points par emplacement)
+ * Le titre du site Mugs Party, est placé à 5 endroits diffèrents de la page.
  * (réference image: exemple-titre-site.jpg).
  *
+ * (5 points, 2.5 points par tableau)
  * Tu dois déclarer une variable qui contiens un tableau des couleurs disponibles pour les mugs: (Noir Blanc Violet Marron Rose Vert Jaune)
- * Tu dois déclarer une variable qui contiens un tableau des tailles disponibles pour les mugs:  (S M XL XXL)
+ * Tu dois déclarer une variable qui contiens un tableau des tailles disponibles pour les mugs: (S M XL XXL)
  */
 ?>
 
@@ -51,12 +61,23 @@
             <div class="container">
                 <h1 class="display-4">Mugs & Tasses</h1>
                 <p class="lead"><a href="#">Découvrez notre sélection.</a> <small><em>Commande simple et livraison rapide.</em></small></p>
-                <div class="new"><a href="#" class="btn btn-outline-secondary"><i class="fa fa-plus mr-2"></i>Ajouter un Mugs</a></div>
+                <div class="new">
+
+                    <?php
+                    /**
+                     * (3 points).
+                     *
+                     * Le lien "Ajouter un mug" ci dessous dois être visible et accessible seulement pour les utilisateurs connectés (user).
+                     */
+                    ?>
+                    <a href="#" class="btn btn-outline-secondary"><i class="fa fa-plus mr-2"></i>Ajouter un mug</a>
+
+                </div>
             </div>
         </div>
         <?php
         /**
-         * (50 points).
+         * (45 points).
          *
          * (réference image: shorting-bar-1.jpg)
          * (réference image: shorting-bar-2.jpg)
@@ -64,39 +85,45 @@
          * (réference image: shorting-bar-4.jpg)
          * (réference image: shorting-bar-5.jpg)
          *
-         * Tu dois créer une barre de recherche (via l'url) qui permet d'affichés les mugs choisis selon ses critères:
+         * Tu dois créer une barre de recherche (poster en url) qui permet d'affichés les mugs choisis selon les critères ci dessous:
          *  - en stock
-         *  - par prix
+         *  - par prix (montant mininum 1, montant maximum 60)
          *  - par couleur
          *  - par taille
          *  - par nouveautés
          *  - par tendances.
          *
+         * Contrainte 1: Dans tous les cas de figures possibles, seuls les mugs qui possèdent une image seront affichés.
+         *
          * Exemple: Ta barre de recherche permet d'affichée tous les mugs qui sont en stock avec un prix supèrieure a 32€ de couleur rose et de taille S qui sont nouveaux mais pas tendances.
          *
-         * Tu dois utiliser dans ton code le tableau PHP déclaré pour afficher les couleurs disponibles.
-         * Tu dois utiliser dans ton code le tableau PHP déclaré pour afficher les tailles disponibles.
+         * Tu dois utiliser dans ton code le tableau PHP déclaré pour afficher les couleurs disponibles. (-5 points si en dur)
+         * Tu dois utiliser dans ton code le tableau PHP déclaré pour afficher les tailles disponibles. (-5 points si en dur)
          *
-         * Ta barre de barre de recherche dois contenir un boutton RESET pour re initialiser la barre de recherche.
+         * Ta barre de barre de recherche dois contenir un boutton RESET pour re initialiser la barre de recherche au valeur par défaut. (réference image: shorting-bar-1.jpg)
          *
          * Pour la logique du tri:
          *  - Dans le dossier form tu créera le fichier sortingForm.php
          *  - Dans ce fichier tu mettra ta logique pour la barre de tri.
          *
-         * Pour afficher la barre de recherche tu dois cliquer sur le bouton "loupe" en haut a droite du site.
-         * Pour des tests tu peu laisser la barre de recherche visible en enlevant la class none ci-dessous.
+         * Seulement sur la page index.php, la barre de recherches dois garder les valeurs sélectionner par l'utilisateur final
+         * Exemple: Si l'utilisateur final demande tous les mugs qui ne sont pas en stock, une fois la recherches effectué,
+         *          la barre de recherches dois continuer à afficher le select En stock à Non.
          */
         ?>
 
-        <div id="sorting-bar" class="container-fluid none sorting-bar">
-            <!-- ton code html et php de la sorting-bar -->
+        <div id="sorting-bar" class="container-fluid sorting-bar">
+            <!-- ton code html, php de la sorting-bar -->
         </div>
 
         <?php
         /**
          * (30 points).
          *
-         * Tu dois afficher tous les mugs présents en base de données si aucun tri est faits SINON afficher ceux triés par la barre de recherche.
+         * Contrainte 2: Aucun attribut style="" est autorisé dans le code HTML.
+         * Contrainte 3: Tu dois reproduire au plus près possible la copie conforme des cartes du formateur (réference image: exemple.jpg)
+         *
+         * Tu dois afficher tous les mugs présents en base de données (ref: Contrainte 1) si aucun tri est faits SINON afficher ceux triés par la barre de recherche.
          *
          * Pour les écrans: (réference image: exemple.jpg)
          *  - écran < 600px = 1 carte par ligne
@@ -107,7 +134,8 @@
          * Les titres des mugs doivent être en majuscules via le CSS
          * Pour le dégradé des titres les couleurs sont: rgba(3, 102, 3, 1) et rgba(0, 0, 0, 1)
          *
-         * Toutes les cartes doivent avoir la même hauteur.
+         * Toutes les cartes doivent avoir la même hauteur et ne doivent pas être cliquable. Donc oublie la balise <a>
+         *
          * Au passage de la souris sur la carte et uniquement au passage de la souris sur la carte:
          *  - la couleur de la carte dois être: rgba(240, 255, 255, 1)
          *  - le curseur de la souris de la carte dois devenir la main. (réference image: exemple-curseur.jpg)
@@ -117,8 +145,8 @@
          * Pour les stock et icones: (réference image: exemple-stock.jpg)
          *  - la couleur de l'icone pour la disponibilité en stock: rgba(0, 128, 0, 1)
          *  - la couleur de l'icone pour la non disponibilité en stock: rgba(206, 14, 14, 1)
-         *  - les informations des stocks doivent être en bas de carte et toutes alignées a la même hauteur
-         *  - le mot pièce dois contenir le S (pièces) si il y a plus de une pièce en stock
+         *  - les informations des prix et stocks doivent être en bas de carte et toutes alignées a la même hauteur
+         *  - le mot "pièce" dois contenir le S (pièces) si il contiens plus de une pièce en stock
          */
         ?>
 
@@ -165,7 +193,7 @@
 
                         <?php
                         /**
-                         * (10 points).
+                         * (7 points).
                          *
                          * Tu dois créer la page contact.
                          * Sur la page contact tu dois faire un dump des informations envoyées via le formulaire de contact.
@@ -191,7 +219,7 @@
                     </div>
                     <div class="col-md-12 footer-box">
                         <div class="copyright">
-                        <p>&copy; <?= date('Y'); ?>. Tous droits réservés.</p>
+                        <p>&copy; 2021. Tous droits réservés.</p>
                         </div>
                     </div>
                 </div>
