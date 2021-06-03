@@ -1,24 +1,24 @@
 <?php
 /**
- * Créer une bdd mugs_party et importe le fichier mugs.sql qui ce trouve dans le dossier sql.
+ * Créer une bdd mugs_party et importer le fichier mugs.sql qui se trouve dans le dossier sql.
  * Créer ton fichier db.php avec les infos de connexion.
  *
- * Supprime le dossier .git
- * Supprime le fichier README.md
+ * Supprimer le dossier .git
+ * Supprimer le fichier README.md
  *
  * Créer un repository (public) mugs_party sur ton github personnel.
- * Ton travail devras être pusher sur ton dépôt mugs_party
- * Le lien de ton dépôt github devra être déposer sur la plateformweb https://e-learning.alaji.fr/ section Développement Web Devoir: tp mugs_party
+ * Ton travail devra être pusher sur ton dépôt mugs_party
+ * Le lien de ton dépôt github devra être déposer sur la plateformweb https://e-learning.alaji.fr/ section Développement Web, Devoir: tp mugs_party
  *
  *
  * (10 points, 2 points par emplacement)
- * Tu dois déclaré une variable qui porte le nom du site: Mugs Party.
+ * Tu dois déclarer une variable qui porte le nom du site: Mugs Party.
  * Le titre du site Mugs Party, est placé à 5 endroits diffèrents de la page.
- * (réference image: exemple-titre-site.jpg).
+ * (référence image: exemple-titre-site.jpg).
  *
  * (5 points, 2.5 points par tableau)
- * Tu dois déclarer une variable qui contiens un tableau des couleurs disponibles pour les mugs: (Noir Blanc Violet Marron Rose Vert Jaune)
- * Tu dois déclarer une variable qui contiens un tableau des tailles disponibles pour les mugs: (S M XL XXL)
+ * Tu dois déclarer une variable qui contient un tableau des couleurs disponibles pour les mugs: (Noir Blanc Violet Marron Rose Vert Jaune)
+ * Tu dois déclarer une variable qui contient un tableau des tailles disponibles pour les mugs: (S M XL XXL)
  */
 ?>
 
@@ -67,7 +67,7 @@
                     /**
                      * (3 points).
                      *
-                     * Le lien "Ajouter un mug" ci dessous dois être visible et accessible seulement pour les utilisateurs connectés (user).
+                     * Le lien "Ajouter un mug" ci dessous doit être visible et accessible seulement pour les utilisateurs connectés (user).
                      */
                     ?>
                     <a href="#" class="btn btn-outline-secondary"><i class="fa fa-plus mr-2"></i>Ajouter un mug</a>
@@ -80,13 +80,13 @@
         /**
          * (45 points).
          *
-         * (réference image: shorting-bar-1.jpg)
-         * (réference image: shorting-bar-2.jpg)
-         * (réference image: shorting-bar-3.jpg)
-         * (réference image: shorting-bar-4.jpg)
-         * (réference image: shorting-bar-5.jpg)
+         * (référence image: shorting-bar-1.jpg)
+         * (référence image: shorting-bar-2.jpg)
+         * (référence image: shorting-bar-3.jpg)
+         * (référence image: shorting-bar-4.jpg)
+         * (référence image: shorting-bar-5.jpg)
          *
-         * Tu dois créer une barre de recherche (poster en url) qui permet d'affichés les mugs choisis selon les critères ci dessous:
+         * Tu dois créer une barre de recherche (poster en url) qui permet d'afficher les mugs choisis selon les critères ci dessous:
          *  - en stock
          *  - par prix (montant mininum 1, montant maximum 60)
          *  - par couleur
@@ -96,20 +96,20 @@
          *
          * Contrainte 1: Dans tous les cas de figures possibles, seuls les mugs qui possèdent une image seront affichés.
          *
-         * Exemple: Ta barre de recherche permet d'affichée tous les mugs qui sont en stock avec un prix supèrieure a 32€ de couleur rose et de taille S qui sont nouveaux mais pas tendances.
+         * Exemple: Ta barre de recherche permet d'afficher tous les mugs qui sont en stock avec un prix supérieur à 32€ de couleur rose et de taille S qui sont nouveaux mais pas tendances.
          *
          * Tu dois utiliser dans ton code le tableau PHP déclaré pour afficher les couleurs disponibles. (-5 points si en dur)
          * Tu dois utiliser dans ton code le tableau PHP déclaré pour afficher les tailles disponibles. (-5 points si en dur)
          *
-         * Ta barre de barre de recherche dois contenir un boutton RESET pour re initialiser la barre de recherche au valeur par défaut. (réference image: shorting-bar-1.jpg)
+         * Ta barre de recherche doit contenir un bouton RESET pour re initialiser la barre de recherche aux valeurs par défaut. (référence image: shorting-bar-1.jpg)
          *
          * Pour la logique du tri:
-         *  - Dans le dossier form tu créera le fichier sortingForm.php
-         *  - Dans ce fichier tu mettra ta logique pour la barre de tri.
+         *  - Dans le dossier form tu créeras le fichier sortingForm.php
+         *  - Dans ce fichier tu mettras ta logique pour la barre de tri.
          *
-         * Seulement sur la page index.php, la barre de recherches dois garder les valeurs sélectionner par l'utilisateur final
-         * Exemple: Si l'utilisateur final demande tous les mugs qui ne sont pas en stock, une fois la recherches effectué,
-         *          la barre de recherches dois continuer à afficher le select En stock à Non.
+         * Seulement sur la page index.php, la barre de recherches doit garder les valeurs sélectionnées par l'utilisateur final
+         * Exemple: Si l'utilisateur final demande tous les mugs qui ne sont pas en stock, une fois la recherches effectuée,
+         *          la barre de recherches doit continuer à afficher le select En stock à Non.
          */
         ?>
 
@@ -121,33 +121,33 @@
         /**
          * (30 points).
          *
-         * Contrainte 2: Aucun attribut style="" est autorisé dans le code HTML. Tous le css dois être ajouter au fichier custom.css
-         * Contrainte 3: Tu dois reproduire au plus près possible la copie conforme des cartes du formateur (réference image: exemple.jpg)
+         * Contrainte 2: Aucun attribut style="" est autorisé dans le code HTML. Tous le css doivent être ajouter au fichier custom.css
+         * Contrainte 3: Tu dois reproduire au plus près possible la copie conforme des cartes du formateur (référence image: exemple.jpg)
          *
-         * Tu dois afficher tous les mugs présents en base de données (ref: Contrainte 1) si aucun tri est faits SINON afficher ceux triés par la barre de recherche.
+         * Tu dois afficher tous les mugs présents en base de données (ref: Contrainte 1) si aucun tri est fait SINON afficher ceux triés par la barre de recherche.
          *
-         * Pour les écrans: (réference image: exemple.jpg)
+         * Pour les écrans: (référence image: exemple.jpg)
          *  - écran < 600px = 1 carte par ligne
-         *  - écran > 600px and < 768px = 2 carte par ligne
-         *  - écran > 768px and < 1024px = 3 carte par ligne
-         *  - écran > 1024px = 4 carte par ligne.
+         *  - écran > 600px and < 768px = 2 cartes par ligne
+         *  - écran > 768px and < 1024px = 3 cartes par ligne
+         *  - écran > 1024px = 4 cartes par ligne.
          *
          * Les titres des mugs doivent être en majuscules via le CSS
          * Pour le dégradé des titres les couleurs sont: rgba(3, 102, 3, 1) et rgba(0, 0, 0, 1)
          *
-         * Toutes les cartes doivent avoir la même hauteur et ne doivent pas être cliquable. Donc oublie la balise <a>
+         * Toutes les cartes doivent avoir la même hauteur et ne doivent pas être cliquables. Donc oublie la balise <a>
          *
          * Au passage de la souris sur la carte et uniquement au passage de la souris sur la carte:
-         *  - la couleur de la carte dois être: rgba(240, 255, 255, 1)
-         *  - le curseur de la souris de la carte dois devenir la main. (réference image: exemple-curseur.jpg)
+         *  - la couleur de la carte doit être: rgba(240, 255, 255, 1)
+         *  - le curseur de la souris de la carte doit devenir la main. (référence image: exemple-curseur.jpg)
          *  - les couleurs du dégradé des titres changent en: rgba(129, 25, 124, 1) et rgba(0, 0, 0, 1)
          *
          * Url pour trouver les icones: https://fontawesome.com/v4.7/
-         * Pour les stock et icones: (réference image: exemple-stock.jpg)
+         * Pour les stocks et icones: (référence image: exemple-stock.jpg)
          *  - la couleur de l'icone pour la disponibilité en stock: rgba(0, 128, 0, 1)
          *  - la couleur de l'icone pour la non disponibilité en stock: rgba(206, 14, 14, 1)
-         *  - les informations des prix et stocks doivent être en bas de carte et toutes alignées a la même hauteur
-         *  - le mot "pièce" dois contenir le S (pièces) si il contiens plus de une pièce en stock
+         *  - les informations des prix et stocks doivent être en bas de carte et toutes alignées à la même hauteur
+         *  - le mot "pièce" doit contenir le S (pièces) s'il contient plus d'une pièce en stock
          */
         ?>
 
@@ -198,7 +198,7 @@
                          *
                          * Tu dois créer la page contact.
                          * Sur la page contact tu dois faire un dump des informations envoyées via le formulaire de contact.
-                         * La function _dump() est disponible dans le fichier configuration.php qui ce trouve dans le dossier config.
+                         * La function _dump() est disponible dans le fichier configuration.php qui se trouve dans le dossier config.
                          */
                         ?>
 
