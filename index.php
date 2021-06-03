@@ -13,7 +13,7 @@
  *
  * (10 points, 2 points par emplacement)
  * Tu dois déclarer une variable qui porte le nom du site: Mugs Party
- * Le titre du site Mugs Party, est placé à 5 endroits diffèrents de la page.
+ * Le titre du site Mugs Party, est placé à 5 endroits différents de la page.
  * (référence image: exemple-titre-site.jpg).
  *
  * (5 points, 2.5 points par tableau)
@@ -95,7 +95,7 @@
          *
          * Contrainte 1: Dans tous les cas de figures possibles, seuls les mugs qui possèdent une image seront affichés.
          *
-         * Exemple: Ta barre de recherche permet d'afficher tous les mugs qui sont en stock avec un prix supérieur à 32€ de couleur rose et de taille S qui sont nouveaux mais pas tendances.
+         * Exemple: Ta barre de recherche permet d'afficher tous les mugs qui sont en stock avec un prix supérieur à 32€ de couleur rose et de taille S qui sont nouveaux mais pas tendance.
          *
          * Tu dois utiliser dans ton code le tableau PHP déclaré pour afficher les couleurs disponibles. (-5 points si en dur)
          * Tu dois utiliser dans ton code le tableau PHP déclaré pour afficher les tailles disponibles. (-5 points si en dur)
