@@ -12,7 +12,7 @@
  *
  *
  * (10 points, 2 points par emplacement)
- * Tu dois déclarer une variable qui porte le nom du site: Mugs Party.
+ * Tu dois déclarer une variable qui porte le nom du site: Mugs Party
  * Le titre du site Mugs Party, est placé à 5 endroits diffèrents de la page.
  * (référence image: exemple-titre-site.jpg).
  *
