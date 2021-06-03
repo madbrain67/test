@@ -75,7 +75,7 @@
                 </div>
             </div>
         </div>
-        
+
         <?php
         /**
          * (45 points).
@@ -121,7 +121,7 @@
         /**
          * (30 points).
          *
-         * Contrainte 2: Aucun attribut style="" est autorisé dans le code HTML.
+         * Contrainte 2: Aucun attribut style="" est autorisé dans le code HTML. Tous le css dois être ajouter au fichier custom.css
          * Contrainte 3: Tu dois reproduire au plus près possible la copie conforme des cartes du formateur (réference image: exemple.jpg)
          *
          * Tu dois afficher tous les mugs présents en base de données (ref: Contrainte 1) si aucun tri est faits SINON afficher ceux triés par la barre de recherche.
