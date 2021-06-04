@@ -16,9 +16,15 @@
  * Le titre du site Mugs Party, est placé à 5 endroits différents de la page.
  * (référence image: exemple-titre-site.jpg).
  *
- * (5 points, 2.5 points par tableau)
+ * (1 points)
  * Tu dois déclarer une variable qui contient un tableau des couleurs disponibles pour les mugs: (Noir Blanc Violet Marron Rose Vert Jaune)
- * Tu dois déclarer une variable qui contient un tableau des tailles disponibles pour les mugs: (S M XL XXL)
+ *
+ * (4 points)
+ * Tu dois créer dans PHPMYADMIN une table sizes avec:
+ *  - 1 colonne id de type "entier" de longueur 10 auto_increment avec une clé primaire
+ *  - 1 colonne sizes de type "string" de longueur 40
+ *  - tu dois insérer les tailles disponibles pour les mugs: (S M XL XXL)
+ *  - tu dois exporter la table dans le dossier sql.
  */
 ?>
 
@@ -98,7 +104,7 @@
          * Exemple: Ta barre de recherche permet d'afficher tous les mugs qui sont en stock avec un prix supérieur à 32€ de couleur rose et de taille S qui sont nouveaux mais pas tendance.
          *
          * Tu dois utiliser dans ton code le tableau PHP déclaré pour afficher les couleurs disponibles. (-5 points si en dur)
-         * Tu dois utiliser dans ton code le tableau PHP déclaré pour afficher les tailles disponibles. (-5 points si en dur)
+         * Tu dois utiliser dans ton code la table sizes pour afficher les tailles disponibles. (-5 points si en dur)
          *
          * Ta barre de recherche doit contenir un bouton RESET pour re initialiser la barre de recherche aux valeurs par défaut. (référence image: shorting-bar-1.jpg)
          *
