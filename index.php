@@ -114,7 +114,7 @@
          *
          * Seulement sur la page index.php, la barre de recherches doit garder les valeurs sélectionnées par l'utilisateur final
          * Exemple: Si l'utilisateur final demande tous les mugs qui ne sont pas en stock, une fois la recherches effectuée,
-         *          la barre de recherches doit continuer à afficher le select En stock à Non.
+         *          la barre de recherches doit continuer à afficher le select En stock à Non. (idem pour les autres champs)
          */
         ?>
 
@@ -201,9 +201,10 @@
                         /**
                          * (7 points).
                          *
-                         * Tu dois créer la page contact.
-                         * Sur la page contact tu dois faire un dump des informations envoyées via le formulaire de contact.
+                         * Tu dois créer la page contact.php
+                         * Sur la page contact tu dois faire un dump des informations envoyées (email, message) via le formulaire de contact du footer ci dessous.
                          * La function _dump() est disponible dans le fichier configuration.php qui se trouve dans le dossier config.
+                         * Contrainte 4: Obligation d'utiliser la function _dump();
                          */
                         ?>
 
